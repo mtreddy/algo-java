@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.io.*;
 public class bSearch{
     public static int rank(int key, int[] a){
         int lo = 0;
@@ -12,7 +13,7 @@ public class bSearch{
         return -1;
     }
     public static int main(String args[]){
-        int whitelist = In.readInts(args[0]);
+        int whitelist = System.in.readInts(args[0]);
         Arrays.sort(whitelist);
         while(!StdIn.isEmpty()) {
             key = StdIn.readInt();
